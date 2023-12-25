@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import After from './After';
 import './App.css';
+import Dishes from './Components/DishesComponents/Dishes';
+import AllCategories from './Components/Filters/AllCategories';
+import Header from './Header';
+import MainPage from './MainPage';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='mainFP'>
+      <Header/>
+      <MainPage/>
+    </div>
+    <div>
+      <After/>
+    </div>
+    <AllCategories/>
+<div className='test'>
+  <Dishes/>
+</div>
     </div>
   );
 }
 
 export default App;
+

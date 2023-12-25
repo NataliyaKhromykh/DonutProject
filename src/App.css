@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+.mainFP{
+  background: radial-gradient(#e5f4fa, #42c5f9);
+  font-family: 'Varela Round', sans-serif;
+}
+.headerAllComponents{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  margin-right: 50px;
+}
+.logoComponents{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.logoName{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.donutWord{
+  margin-top: -50px;
+}
+.headerItems{
+  display: flex;
+  align-items: center;
+  width: 700px;
+  justify-content: space-around;
+  position: relative;
+}
+.choose:hover{
+  color: #0377d0;
+  cursor: pointer;
+}
+.mainPageContainer{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+h2{
+  font-size: 30px;
+}
+.mainPicContainer{
+  display: flex;
+  margin-top: -120px;
+}
+.LoveDonuts{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 80px;
+  margin-top: -5px;
+
+}
+.mainTextContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.textAfter{
+  margin-top: -10px;
+  font-size: 20px;
+}
+.myCartButton{
+  color: white;
+  font-size: 20px;
+background: rgba(255, 255, 255, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.5px);
+-webkit-backdrop-filter: blur(4.5px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+}
+.linkrouter{
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myCartButton:hover{
+/* From https://css.glass */
+background: rgba(3, 119, 208, 0.15);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(3, 119, 208, 0.07);
+}
+.order{
+  padding: 8px;
+  margin-top: 20px;
+}
+.reasonsContainer{
+display: flex;
+justify-content: space-around;
+margin-top: 100px;
+}
+.reasonCard{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.reasonText{
+  font-size: 15px;
+  color: #0C134F;
+  font-family: 'Varela Round', sans-serif;
+}
+.categoryLine{
+  display: flex;
+  font-family: 'Varela Round', sans-serif;
+  color: #0C134F;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: 70px;
+  align-items: center;
+}
+.categoryNames{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 30px;
+}
+.categoryButtonSelected{
+cursor: pointer;
+background: rgba(66, 197, 249, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.1px);
+-webkit-backdrop-filter: blur(3.1px);
+border: 1px solid rgba(66, 197, 249, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.donutsLine{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.dishesComponents{
+  display: flex;
+  padding: 30px;
+}
+.dishImg{
+  width: 200px;
+}
+.dishCard{
   display: flex;
   flex-direction: column;
   align-items: center;
+background: rgba(239, 219, 221, 0.23);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.3px);
+border: 1px solid rgba(239, 219, 221, 0.83);
+color: #0C134F;
+  padding: 16px;
+  font-family: 'Varela Round', sans-serif;
+}
+.dishPrice{
+  margin-top: -15px;
+}
+.addToCartButton{
+background-color: #FF9EAA;
+color: white;
+border: none;
+border-radius: 16px;
+padding: 8px;
+margin-left: 30px;
+font-family: 'Varela Round', sans-serif;
+}
+.buttons{
+display: flex;
+}
+.minusplus{
+  background: rgba(239, 219, 221, 0.23);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(247, 188, 193, 0.83);
+  color: #0C134F;
+  width: 20px;
+  padding: 5px;
+}
+span{
+  padding: 5px;
+}
+
+.categoryButtonSelected{
+background: rgba(66, 197, 249, 0.64);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.6px);
+-webkit-backdrop-filter: blur(3.6px);
+border: 1px solid rgba(66, 197, 249, 1);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  width: 150px;
+}
+.categoryButton:hover{
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(66, 197, 249, 1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+.quantityButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
