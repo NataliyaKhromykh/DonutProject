@@ -6,7 +6,6 @@ import Header from './Header';
 import MainPage from './MainPage';
 
 
-
 function App() {
   return (
     <div className="App">
@@ -26,4 +25,3 @@ function App() {
 }
 
 export default App;
-

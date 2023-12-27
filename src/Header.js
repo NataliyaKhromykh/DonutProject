@@ -1,8 +1,20 @@
 import logo from './logo.png';
-import Cart from './Components/Cart/Cart';
+import cart from './cart.png';
+import React from 'react';
+import {
+BrowserRouter as Router,
+ Routes,
+ Route,
+ Link
+} from "react-router-dom";
+import CartPage from './Components/Cart/CartPage'
+
 
 function Header() {
-    return(<div className='headerAllComponents'>
+
+    return <Router>
+
+    <nav className='headerAllComponents'>
 
         <div className='logoComponents'>
             <div>
@@ -21,9 +33,22 @@ function Header() {
             <p className='choose'>Products</p>
             <p className='choose'>Contacts</p>
             <p className='choose'>Our Story</p>
-        <Cart/>
+            <Link to="/cartpage">
+         <button className='myCartButton'>
+        <div>My cart </div><div><img src={cart} width="30px" alt='cart'/></div>
+        </button>
+        </Link>
         </div>
-    </div>)
+    </nav>
+    <Routes>
+        <Route path='/cartpage' element={<CartPage/>}/>
+    </Routes>
+    </Router>
 
 }
 export default Header;
+
+
+
+
+
