@@ -1,30 +1,24 @@
-// import cart from './cart.png';
-// import React from 'react';
-// import {
-//     BrowserRouter as Router,
-//     Routes,
-//     Route,
-//     Link
-//   } from "react-router-dom";
-//   import CartPage from './CartPage';
-  
+import CartItem from "./CartItem";
+import { useSelector } from "react-redux";
+import { getCartItems, getTotalPrice } from "../../redux/cartSlice";
+import './style.css';
+// import { useState } from "react";
 
+function Cart() {
+    // const [isOpen, setIsOpen] = useState(true);
+    const cartItems = useSelector(getCartItems);
+    const totalPrice = useSelector(getTotalPrice);
+return(
+        <div className="modal_content">
+        {cartItems.map(cartItem => <CartItem cartItem={cartItem}/>)}
+        <div className="totalPrice"><h3>TOTAL: ${totalPrice}</h3>
+        <button className="payButton">I'm ready to pay</button>
+        </div>
 
-// function Cart() {
+        {/* <button onClick={() => setIsOpen(false)}>Close</button> */}
 
-//     return <Router>
-//     <nav>
-//         <Link className='linkrouter' to="/cartpage"> 
-//         <button className='myCartButton'>
-//         <div>My cart </div><div><img src={cart} width="30px" alt='cart'/></div>
-//         </button>
-// </Link>
-//     </nav>
+        </div>)
 
-//     <Routes>
-//         <Route path="/cartpage" element={<CartPage/>}/>
-//     </Routes>
-//     </Router>
-// }
+}
 
-// export default Cart;
+export default Cart;

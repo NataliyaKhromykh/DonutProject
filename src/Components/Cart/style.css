@@ -1,0 +1,70 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    }
+    
+    .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background: rgba(66, 197, 249, 0.37);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.4px);
+-webkit-backdrop-filter: blur(10.4px);
+border: 1px solid rgba(66, 197, 249, 1);
+    width: 100%;
+    height: 100%;
+    }
+    
+    .modal_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 158, 170, 0.54);
+    border-radius: 16px;
+    width: 70%;
+    }
+
+    .deleteIcon{
+        width: 20px;
+    }
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+    font-size: 20px;
+    color: #0C134F;
+    font-family: 'Varela Round', sans-serif;}
+.cartItemName{
+    width: 200px;
+}
+.totalPrice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payButton{
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    background-color: #0C134F;
+    border-radius: 16px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.payButton:hover{
+    background-color: #FF9EAA;
+}

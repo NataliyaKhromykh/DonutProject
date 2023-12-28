@@ -13,13 +13,13 @@ function App() {
       <Header/>
       <MainPage/>
     </div>
-    <div>
+
       <After/>
-    </div>
-    <AllCategories/>
-<div className='test'>
-  <Dishes/>
-</div>
+
+      <AllCategories/>
+
+      <Dishes/>
+
     </div>
   );
 }
