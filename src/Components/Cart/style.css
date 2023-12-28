@@ -29,6 +29,7 @@ border: 1px solid rgba(66, 197, 249, 1);
     background: rgba(255, 158, 170, 0.54);
     border-radius: 16px;
     width: 70%;
+    padding: 20px;
     }
 
     .deleteIcon{
@@ -41,7 +42,9 @@ border: 1px solid rgba(66, 197, 249, 1);
     width: 800px;
     font-size: 20px;
     color: #0C134F;
-    font-family: 'Varela Round', sans-serif;}
+    font-family: 'Varela Round', sans-serif;
+}
+    
 .cartItemName{
     width: 200px;
 }
