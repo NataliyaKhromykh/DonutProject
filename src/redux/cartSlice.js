@@ -11,7 +11,8 @@ export const slice = createSlice({
                 id:timeId,
                 dishId: action.payload.dish.id,
                 quantity: action.payload.quantity,
-                totalPrice: action.payload.quantity * action.payload.dish.price
+                totalPrice: action.payload.quantity * action.payload.dish.price,
+                totalQuantity: action.payload.quantity
             })
         },
         removeItemFromCart: (state,action) => {
@@ -21,6 +22,12 @@ export const slice = createSlice({
         }
     }
 })
+
+export const getTotalQuantity = state => {
+    return state.cart.cartItems.reduce((quantity, cartItems) => {
+        return cartItems.totalQuantity + quantity
+    },0)
+}
 
 export const getTotalPrice = state => {
     return state.cart.cartItems.reduce((total, cartItems) => {

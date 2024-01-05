@@ -30,8 +30,8 @@
   position: relative;
 }
 .choose:hover{
-  color: #0377d0;
-  cursor: pointer;
+text-decoration: underline;
+cursor: pointer;
 }
 .mainPageContainer{
   display: flex;
@@ -78,6 +78,7 @@ border: 1px solid rgba(255, 255, 255, 0.18);
   text-decoration: none;
 }
 
+
 .myCartButton:hover{
 background: rgba(3, 119, 208, 0.15);
 border-radius: 16px;
@@ -86,6 +87,24 @@ backdrop-filter: blur(5.5px);
 -webkit-backdrop-filter: blur(5.5px);
 border: 1px solid rgba(3, 119, 208, 0.07);
 }
+
+.cartNumber{
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
+  padding: 5px;
+  z-index:1;
+  background-color: #FF9EAA;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .order{
   padding: 8px;
   margin-top: 20px;
@@ -183,7 +202,7 @@ display: flex;
   width: 20px;
   padding: 5px;
 }
-span{
+.deleteSpan{
   padding: 5px;
 }
 
@@ -213,8 +232,207 @@ border: 1px solid rgba(66, 197, 249, 1);
   align-items: center;
   justify-content: center;
 }
+.quantitySpan{
+  padding: 5px;
+}
 
 
+.feedbackMain{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 500px;
+  position: relative;
+}
+
+.feedbackBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+}
+.feedbackText{
+  font-family: 'Varela Round', sans-serif;
+  color: #0C134F;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+  color: #0C134F;
+  font-size: 20px;
+  }
+.person-img{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: block;
+  object-fit: cover;
+  padding: 10px;
+}
+.infoText{
+  font-family: 'Varela Round', sans-serif;
+  color: #0C134F;
+  font-size: 18px;
+}
+.containerWArrows{
+  display: flex;
+  align-items: center;
+}
+.reviewArrow{
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  color: white;
+  background-color: #42c5f9;
+  margin: 200px;
+}
+.reviewArrow:hover{
+  background-color: #FF9EAA;
+}
+.spanQuo{
+  position: absolute;
+}
+.quotationImg{
+  width: 40px;
+}
+.up{
+  left: 330px;
+  bottom: 160px;
+}
+.down{
+  right: 330px;
+  bottom: 15px;
+}
+.popup{
+  position: absolute;
+}
+.one{
+  width: 30px;
+  left: 300px;
+  top: 180px;
+}
+.two{
+  width: 50px;
+  right: 250px;
+  top: 10px;
+}
+.three{
+  width: 80px;
+  right: 120px;
+  bottom: 10px;
+}
+.four{
+  width: 50px;
+  left: 110px;
+  bottom: 70px;
+}
+.five{
+  width: 30px;
+  right: 100px;
+  top: 150px;
+}
+.six{
+  width: 70px;
+  left: 100px;
+  top: 100px;
+}
+
+.footerBox{
+  background: radial-gradient(#e5f4fa, #42c5f9);
+  font-family: 'Varela Round', sans-serif;
+  color: #0C134F;
+  padding: 40px;
+  display: flex;
+
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.map{
+  width: 350px;
+}
+.footerh1{
+  font-size: 20px;
+}
+
+.legal{
+  background-color: #0C134F;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+}
+.info:hover{
+  cursor: pointer;
+  font-weight: 600;
+}
+.toMyPage{
+  color: white;
+}
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  }
+  .btn{
+      color: white;
+      background-color: #0C134F;
+      cursor: pointer;
+      padding: 5px;
+  }
+  .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background: rgba(66, 197, 249, 0.37);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.4px);
+-webkit-backdrop-filter: blur(10.4px);
+border: 1px solid rgba(66, 197, 249, 1);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow: auto;
+  justify-content: center;
+  align-items: flex-start;
+  }
+  
+  .modal_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 158, 170, 0.54);
+  border-radius: 16px;
+  padding: 20px;
+  width: 60%;
+  max-height: 75%;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  overflow: auto;
+  }
+
+  .modalTwoText{
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+  }
 
 
 

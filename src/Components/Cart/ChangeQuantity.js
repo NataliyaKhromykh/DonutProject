@@ -12,7 +12,7 @@ const ChangeQuantity = ({quantity, setQuantity}) => {
 
     return (<div className="quantityButtons">
         <button className="minusplus" onClick={removeQuantity}>-</button>
-        <span>{quantity}</span>
+        <span className="quantitySpan">{quantity}</span>
         <button  className="minusplus" onClick={addQuantity}>+</button>
 
     </div>)

@@ -2,6 +2,8 @@ import After from './After';
 import './App.css';
 import Dishes from './Components/DishesComponents/Dishes';
 import AllCategories from './Components/Filters/AllCategories';
+import Contacts from './Contacts';
+import Feedback from './Feedback';
 import Header from './Header';
 import MainPage from './MainPage';
 
@@ -11,6 +13,7 @@ function App() {
     <div className="App">
       <div className='mainFP'>
       <Header/>
+
       <MainPage/>
     </div>
 
@@ -19,6 +22,10 @@ function App() {
       <AllCategories/>
 
       <Dishes/>
+
+      <Feedback/>
+      
+      <Contacts/>
 
     </div>
   );

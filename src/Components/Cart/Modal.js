@@ -10,6 +10,7 @@ const Modal = ( {setIsOpen, children} ) => {
         <div className='modal'>
             <div className='overlay' onClick={closeModal}>
                 {children}
+                <span class="btn" onClick={()=> setIsOpen(false)}>&times;</span>
             </div>
         </div>
     )

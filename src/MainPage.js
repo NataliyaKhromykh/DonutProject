@@ -5,7 +5,7 @@ function MainPage() {
             <div className='mainTextContainer'>
             <h2>Grab some more of these</h2>
             <h1 className='LoveDonuts'>Happy Donuts!</h1>
-            <p className='textAfter'>Huge Collection of savory and sweet Donuts <br/> with our without IceCream</p>
+            <p className='textAfter'>Huge Collection of savory and sweet Donuts <br/> with our without Ice Cream</p>
             <div>
                 <button className='myCartButton order'>
                     Order Now
