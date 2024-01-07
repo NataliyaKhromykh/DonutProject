@@ -470,8 +470,15 @@ border: 1px solid rgba(3, 119, 208, 0.07);
 
 
 @media all and (max-width:1050px){
+
   .categoryNames{
-    width: 600px;
+    width: 700px;
+  }
+  .mainTextContainer{
+    margin-top: 50px;
+  }
+  .categoryNames{
+    width: 400px;
   }
   .LoveDonuts{
     font-size: 60px;
@@ -480,10 +487,10 @@ border: 1px solid rgba(3, 119, 208, 0.07);
     width: 400px;
   }
   .categoryButtonSelected{
-      width: 100px;
+      width: 90px;
     }
     .categoryButton:hover{
-      width: 100px;
+      width: 90px;
     }
     .categoryLine{
       font-size: 16px;
@@ -505,9 +512,6 @@ border: 1px solid rgba(3, 119, 208, 0.07);
 .down{
   right: 200px;
   bottom: 80px;
-}
-.mainTextContainer{
-  margin-top: 50px;
 }
 .contactAndHours{
   width: 400px;
