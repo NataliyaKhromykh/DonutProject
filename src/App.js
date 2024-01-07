@@ -60,7 +60,7 @@ function App() {
         </ModalTwo>}
     </div>
     <button onClick={() => setIsOpen(true)} className='myCartButton'>
- <div>My cart </div><div><img className='logoCart' src={cart}  alt='cart'/></div><span className='cartNumber'>{totalQuantity}</span></button>
+ <div>My cart </div><div><img className='logoCart' src={cart}  alt='cart'/><span className='cartNumber'>{totalQuantity}</span></div></button>
  {isOpen && 
  <Modal setIsOpen={setIsOpen}>
  <Cart setIsOpen={setIsOpen}/>
