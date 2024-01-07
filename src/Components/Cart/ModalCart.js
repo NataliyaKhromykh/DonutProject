@@ -1,18 +1,18 @@
 import './style.css';
 
-const Modal = ( {setIsOpen, children} ) => {
+const ModalCart = ( {setIsOpenCart, children} ) => {
     const closeModal = e => {
     if (e.target.classList.contains('overlay')) {
-        setIsOpen(false)
+        setIsOpenCart(false)
     }
 }
     return(
         <div className='modal'>
             <div className='overlay' onClick={closeModal}>
                 {children}
-                <span class="btn" onClick={()=> setIsOpen(false)}>&times;</span>
+                <span class="btn" onClick={()=> setIsOpenCart(false)}>&times;</span>
             </div>
         </div>
     )
 }
-export default Modal;
+export default ModalCart;

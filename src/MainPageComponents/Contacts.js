@@ -1,9 +1,8 @@
-
-import map from './map.png';
+import map from './../Assets/map.png';
 
 function Contacts() {
     return(
-        <div>
+        <section id='contacts_section'>
         <div className="footerBox">
             <div className='contactAndHours'>
             <div>
@@ -32,7 +31,7 @@ function Contacts() {
         <p>©️2024 All rights reserved. Website was developed for educational purposes and is not a real offer</p>
         </div>
 
-        </div>
+        </section>
     )
 }
 export default Contacts;

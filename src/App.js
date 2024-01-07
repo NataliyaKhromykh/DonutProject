@@ -1,47 +1,31 @@
-import After from './After';
+import After from './MainPageComponents/After';
 import './App.css';
 import Dishes from './Components/DishesComponents/Dishes';
 import AllCategories from './Components/Filters/AllCategories';
-import Contacts from './Contacts';
-import Feedback from './Feedback';
-// import Header from './Header';
-// import MainPage from './MainPage';
-import MainPicture from './mainPicture.png'
-
-import logo from './logo.png';
-import cart from './cart.png';
+import Contacts from './MainPageComponents/Contacts';
+import Feedback from './MainPageComponents/Feedback';
+import MainPicture from './Assets/mainPicture.png'
+import cart from './Assets/cart.png';
 import { useState } from 'react';
-import Modal from './Components/Cart/Modal';
+import ModalCart from './Components/Cart/ModalCart';
 import Cart from './Components/Cart/Cart';
 import { useSelector } from "react-redux";
 import { getTotalQuantity } from './redux/cartSlice';
-import ModalTwo from './ModalTwo';
+import ModalStory from './MainPageComponents/ModalStory';
 import { HashLink as Link } from 'react-router-hash-link';
+import Logo from './MainPageComponents/Logo';
 
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [twoIsOpen, setTwoIsOpen] = useState(false);
+  const [isOpenCart, setIsOpenCart] = useState(false);
+  const [isOpenStory, setIsOpenStory] = useState(false);
   const totalQuantity = useSelector(getTotalQuantity);
   return (
     <div className="App">
       <div className='mainFP'>
-      {/* <Header/> */}
-      <div className='headerAllComponents'>
 
-<div className='logoComponents'>
-    <div>
-    <img className='logoDonut' src={logo} alt='logo'/>
-    </div>
-    <div className='logoName'>
-        <div>
-        <p>Happy</p>
-        </div>
-        <div className='donutWord'>
-        <h3>Donuts</h3>
-        </div>
-    </div>
-</div>
+    <div className='headerAllComponents'>
+<Logo/>
 <div className='headerItems'>
 
 
@@ -54,17 +38,17 @@ function App() {
 
 
     <div>
-    <p onClick={() => setTwoIsOpen(true)} className='choose'>Our Story</p>
-    {twoIsOpen &&
-        <ModalTwo setTwoIsOpen={setTwoIsOpen}>
-        </ModalTwo>}
+    <p onClick={() => setIsOpenStory(true)} className='choose'>Our Story</p>
+    {isOpenStory &&
+        <ModalStory setIsOpenStory={setIsOpenStory}>
+        </ModalStory>}
     </div>
-    <button onClick={() => setIsOpen(true)} className='myCartButton'>
+    <button onClick={() => setIsOpenCart(true)} className='myCartButton'>
  <div>My cart </div><div><img className='logoCart' src={cart}  alt='cart'/><span className='cartNumber'>{totalQuantity}</span></div></button>
- {isOpen && 
- <Modal setIsOpen={setIsOpen}>
- <Cart setIsOpen={setIsOpen}/>
- </Modal>}
+ {isOpenCart && 
+ <ModalCart setIsOpenCart={setIsOpenCart}>
+ <Cart setIsOpenCart={setIsOpenCart}/>
+ </ModalCart>}
 </div>
 
 </div>
@@ -86,16 +70,15 @@ function App() {
     </div>
 
       <After/>
-      <section id='products_section'>
+      {/* <section id='products_section'> */}
       <AllCategories/>
-      </section>
+      {/* </section> */}
       <Dishes/>
 
 
       <Feedback/>
-      <section id='contacts_section'>
+
       <Contacts/>
-      </section>
 
     </div>
   );

@@ -1,7 +1,7 @@
-import fast from './fast.png';
-import time from './time.png';
-import fresh from './fresh.png';
-import newitem from './new.png';
+import time from './../Assets/time.png';
+import fresh from './../Assets/fresh.png';
+import newitem from './../Assets/new.png';
+import fast from './../Assets/fast.png'
 
 function After() {
 

@@ -1,11 +1,10 @@
-
 import React, {useState} from "react";
-import feedback from "./FeedbackData";
+import feedback from "../data/dataFeedback";
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
-import up from './quotation-up-2.png';
-import down from './quotation-down.png';
-import popup from './popup.png';
+import up from './../Assets/quotation-up-2.png';
+import down from './../Assets/quotation-down.png';
+import popup from './../Assets/popup.png';
 
 
 

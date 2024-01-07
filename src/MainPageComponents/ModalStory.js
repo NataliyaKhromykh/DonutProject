@@ -1,10 +1,10 @@
-import './App.css';
+import './../App.css';
 import { useState } from 'react';
 
-const ModalTwo = ({setTwoIsOpen}) => {
-    const closeModalTwo = e => {
+const ModalStory = ({setIsOpenStory}) => {
+    const closeModalStory = e => {
         if (e.target.classList.contains('overlay')) {
-            setTwoIsOpen(false)
+            setIsOpenStory(false)
         }
     }
 const description = `Once upon a time, five years ago, the aroma of warm, sugary dreams filled the air as me and my mom embarked on a delightful journey together. With aprons tied and hearts full of shared enthusiasm, the two of us opened the doors to a cozy haven of sweetness – your very own donut shop.
@@ -19,13 +19,13 @@ const [showMore, setShowMore] = useState(false);
 
         return(
             <div className='modal'>
-                <div className='overlay' onClick={closeModalTwo}>
+                <div className='overlay' onClick={closeModalStory}>
                     <div className='modal_content'>
                     <p className='modalTwoText'>{showMore ? description : description.substring(0, 284) + ".."}<button className='btnShow' onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button></p>
                     </div>
-                    <span class="btn" onClick={()=> setTwoIsOpen(false)}>&times;</span>
+                    <span class="btn" onClick={()=> setIsOpenStory(false)}>&times;</span>
                 </div>
             </div>
         )
     }
-export default ModalTwo;
+export default ModalStory;
