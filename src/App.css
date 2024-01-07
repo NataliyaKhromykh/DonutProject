@@ -14,6 +14,9 @@
   align-items: center;
   margin-left: 50px;
 }
+.logoDonut{
+  width: 45px;
+}
 .logoName{
   display: flex;
   flex-direction: column;
@@ -49,7 +52,6 @@ h2{
   font-family: 'Varela Round', sans-serif;
   font-size: 80px;
   margin-top: -5px;
-
 }
 .mainTextContainer{
   display: flex;
@@ -59,6 +61,9 @@ h2{
 .textAfter{
   margin-top: -10px;
   font-size: 20px;
+}
+.mainPicture{
+  width: 500px;
 }
 .myCartButton{
   color: white;
@@ -78,7 +83,9 @@ border: 1px solid rgba(255, 255, 255, 0.18);
   text-decoration: none;
 }
 
-
+.logoCart{
+  width: 30px;
+}
 .myCartButton:hover{
 background: rgba(3, 119, 208, 0.15);
 border-radius: 16px;
@@ -109,10 +116,14 @@ border: 1px solid rgba(3, 119, 208, 0.07);
   padding: 8px;
   margin-top: 20px;
 }
+
 .reasonsContainer{
 display: flex;
 justify-content: space-around;
 margin-top: 100px;
+}
+.afterPic{
+  width: 60px;
 }
 .reasonCard{
 display: flex;
@@ -139,15 +150,7 @@ align-items: center;
   width: 1000px;
   margin-top: 30px;
 }
-.categoryButtonSelected{
-cursor: pointer;
-background: rgba(66, 197, 249, 0.29);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.1px);
--webkit-backdrop-filter: blur(3.1px);
-border: 1px solid rgba(66, 197, 249, 1);
-}
+
 
 
 .donutsLine{
@@ -201,6 +204,8 @@ display: flex;
   color: #0C134F;
   width: 20px;
   padding: 5px;
+  display: flex;
+  justify-content: center;
 }
 .deleteSpan{
   padding: 5px;
@@ -283,6 +288,7 @@ border: 1px solid rgba(66, 197, 249, 1);
 .containerWArrows{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .reviewArrow{
   border-radius: 50%;
@@ -350,7 +356,6 @@ border: 1px solid rgba(66, 197, 249, 1);
   color: #0C134F;
   padding: 40px;
   display: flex;
-
   justify-content: space-around;
   margin-top: 70px;
 }
@@ -359,6 +364,11 @@ border: 1px solid rgba(66, 197, 249, 1);
 }
 .footerh1{
   font-size: 20px;
+}
+.contactAndHours{
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
 }
 
 .legal{
@@ -430,10 +440,318 @@ border: 1px solid rgba(66, 197, 249, 1);
   }
 
   .modalTwoText{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Varela Round', sans-serif;
   }
+  .btnShow{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+.btnShow:hover{
+  background: rgba(3, 119, 208, 0.15);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(3, 119, 208, 0.07);
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
 
 
 
+
+@media all and (max-width:1050px){
+  .categoryNames{
+    width: 600px;
+  }
+  .LoveDonuts{
+    font-size: 60px;
+  }
+  .mainPicture{
+    width: 400px;
+  }
+  .categoryButtonSelected{
+      width: 100px;
+    }
+    .categoryButton:hover{
+      width: 100px;
+    }
+    .categoryLine{
+      font-size: 16px;
+    }
+    .feedbackBox{
+      width: 700px;
+    }
+
+.containerWArrows{
+  width: 1024px;
+}
+.reviewArrow{
+  margin: 60px;
+}
+.up{
+  left: 200px;
+  bottom: 210px;
+}
+.down{
+  right: 200px;
+  bottom: 80px;
+}
+.mainTextContainer{
+  margin-top: 50px;
+}
+.contactAndHours{
+  width: 400px;
+}
+}
+@media all and (max-width:820px){
+.noname{
+  width: 768px;
+}
+.containerWArrows{
+  width: 768px;
+}
+.feedbackBox{
+  width: 350px;
+}
+.two{
+  width: 50px;
+  right: 200px;
+  top: 80px;
+}
+.reviewArrow{
+  margin: 40px;
+}
+.mainPageContainer{
+margin-left: 30px;
+}
+h2{
+  font-size: 20px;
+}
+.mainPicContainer{
+  margin-top: -90px;
+}
+.LoveDonuts{
+  font-size: 70px;
+}
+.mainTextContainer{
+  margin-top: 50px;
+}
+.textAfter{
+  margin-top: -10px;
+  font-size: 15px;
+}
+.mainPicture{
+  width: 400px;
+}
+.contactAndHours{
+  width: 400px;
+}
+.map{
+  width: 200px;
+}
+}
+
+
+
+@media all and (max-width:500px){
+  .headerAllComponents{
+    font-size: 10px;
+    margin-right: 30px;
+  }
+  .logoComponents{
+    margin-left: 30px;
+  }
+  .logoDonut{
+    width: 20px;
+  }
+  .donutWord{
+    margin-top: -20px;
+  }
+  .logoCart{
+    width: 15px;
+  }
+  .headerItems{
+    width: 375px;
+  }
+
+  h2{
+    font-size: 10px;
+  }
+  .mainPicContainer{
+    margin-top: -30px;
+  }
+  .LoveDonuts{
+    font-size: 30px;
+  }
+  .mainTextContainer{
+    margin-top: 10px;
+  }
+  .textAfter{
+    margin-top: -10px;
+    font-size: 10px;
+  }
+  .mainPicture{
+    width: 200px;
+  }
+  .myCartButton{
+    font-size: 10px;
+    width: 90px;
+  }
+  .cartNumber{
+    width: 0.5px;
+    height: 0.5px;
+    font-size: 4px;
+    right: 10px;
+    bottom: 4px;
+  }
+  
+  .order{
+    padding: 3px;
+    margin-top: 10px;
+  }
+  
+  .reasonsContainer{
+  margin-top: 30px;
+  }
+  .afterPic{
+    width: 25px;
+  }
+  .reasonText{
+    font-size: 8px;
+  }
+  .categoryLine{
+    font-size: 10px;
+    margin-top: 25px;
+  }
+  .categoryNames{
+    width: 340px;
+    margin-top: 10px;
+  }
+  .donutsLine{
+    margin-top: 10px;
+  }
+  .dishesComponents{
+    padding: 5px;
+  }
+  .dishImg{
+    width: 100px;
+  }
+  .dishCard{
+    padding: 10px;
+    font-size: 10px;
+  }
+  .dishPrice{
+    margin-top: -10px;
+  }
+  .addToCartButton{
+  font-size: 8px;
+  }
+  .buttons{
+    margin: 10px;
+  }
+  .minusplus{
+    width: 10px;
+    font-size: 8px;
+  }
+  .categoryButtonSelected{
+    width: 80px;
+  }
+  .categoryButton:hover{
+    width: 80px;
+  }
+  .noname{
+    width: 350px;
+  }
+  .containerWArrows{
+    width: 350px;
+  }
+  .reviewArrow{
+    margin: 10px;
+  }
+  
+  .feedbackBox{
+    width: 250px;
+  }
+  .feedbackText{
+    font-size: 20px;
+  }
+  .img-container{
+    font-size: 18px;
+    }
+  .person-img{
+    width: 50px;
+    height: 50px;
+  }
+  .infoText{
+    font-size: 15px;
+  }
+  .quotationImg{
+    width: 20px;
+  }
+  .up{
+    left: 50px;
+    bottom: 330px;
+  }
+  .down{
+    right: 40px;
+    bottom: 170px;
+  }
+  .one{
+    visibility: hidden;
+  }
+  .two{
+    width: 40px;
+    right: 30px;
+    top: 10px;
+  }
+  .three{
+    visibility: hidden;
+  }
+  .four{
+    width: 40px;
+    left: 150px;
+    bottom: 120px;
+  }
+  .five{
+    width: 20px;
+    right: 80px;
+    top: 100px;
+  }
+  .six{
+    width: 50px;
+    left: 50px;
+    top: 50px;
+  }
+  .map{
+    width: 350px;
+  }
+  .footerh1{
+    font-size: 15px;
+  }
+  .legal{
+    font-size: 10px;
+  }
+  .par{
+    font-size: 10px;
+  }
+  .footerBox{
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .contactAndHours{
+    width: 200px;
+  }
+}
 

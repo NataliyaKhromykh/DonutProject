@@ -5,7 +5,8 @@ import AllCategories from './Components/Filters/AllCategories';
 import Contacts from './Contacts';
 import Feedback from './Feedback';
 // import Header from './Header';
-import MainPage from './MainPage';
+// import MainPage from './MainPage';
+import MainPicture from './mainPicture.png'
 
 import logo from './logo.png';
 import cart from './cart.png';
@@ -30,7 +31,7 @@ function App() {
 
 <div className='logoComponents'>
     <div>
-    <img src={logo} width="45px" alt='logo'/>
+    <img className='logoDonut' src={logo} alt='logo'/>
     </div>
     <div className='logoName'>
         <div>
@@ -43,10 +44,10 @@ function App() {
 </div>
 <div className='headerItems'>
 
-<nav>
-<Link to='/#products_section'><p className='choose'>Products</p></Link>
-<Link to='/#contacts_section'><p className='choose'>Contacts</p></Link>
-</nav>
+
+<Link className='link' to='/#products_section'><p className='choose'>Products</p></Link>
+<Link className='link' to='/#contacts_section'><p className='choose'>Contacts</p></Link>
+
 
 
 
@@ -59,7 +60,7 @@ function App() {
         </ModalTwo>}
     </div>
     <button onClick={() => setIsOpen(true)} className='myCartButton'>
- <div>My cart </div><div><img src={cart} width="30px" alt='cart'/></div><span className='cartNumber'>{totalQuantity}</span></button>
+ <div>My cart </div><div><img className='logoCart' src={cart}  alt='cart'/></div><span className='cartNumber'>{totalQuantity}</span></button>
  {isOpen && 
  <Modal setIsOpen={setIsOpen}>
  <Cart setIsOpen={setIsOpen}/>
@@ -67,17 +68,29 @@ function App() {
 </div>
 
 </div>
-
-
-      <MainPage/>
+<div className='mainPageContainer'>
+            <div className='mainTextContainer'>
+            <h2>Grab some more of these</h2>
+            <h1 className='LoveDonuts'>Happy Donuts!</h1>
+            <p className='textAfter'>Huge Collection of savory and sweet Donuts <br/> with our without Ice Cream</p>
+            <div>
+            <Link className='link' to='/#products_section'><button className='myCartButton order'>
+                    Order Now
+                </button></Link>
+            </div>
+            </div>
+            <div className='mainPicContainer'>
+            <img className='mainPicture' src={MainPicture} alt='mainpic'/>
+            </div>
+        </div>
     </div>
 
       <After/>
-
+      <section id='products_section'>
       <AllCategories/>
-<section id='products_section'>
-      <Dishes/>
       </section>
+      <Dishes/>
+
 
       <Feedback/>
       <section id='contacts_section'>

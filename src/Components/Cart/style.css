@@ -88,3 +88,26 @@ border: 1px solid rgba(66, 197, 249, 1);
 .btn:hover{
     background-color: #FF9EAA;
 }
+
+
+@media all and (max-width:1050px){
+    .content{
+        width: 500px;
+    }
+}
+@media all and (max-width:500px){
+    .content{
+        width: 300px;
+        font-size: 10px;
+    }
+    .payButton{
+        font-size: 10px;
+        width: 100px;
+    }
+    .cartItemName{
+        width: 80px;
+    }
+    .deleteIcon{
+        width: 10px;
+    }
+}

@@ -5,7 +5,7 @@ import Review from "./Review";
 function Feedback() {
     return (
         <div className="feedbackMain">
-        <div>
+        <div className="noname">
                 <div className="feedbackText">
                     <p>Our Happy Customers</p>
                 </div>

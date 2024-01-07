@@ -7,6 +7,8 @@ import up from './quotation-up-2.png';
 import down from './quotation-down.png';
 import popup from './popup.png';
 
+
+
 const Review = () => {
     const [index,setIndex] = useState(0);
     const {name,image,text} = feedback[index];
