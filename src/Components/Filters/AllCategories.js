@@ -6,7 +6,7 @@ function AllCategories(){
             <h1>Choices choices choices...</h1>
             <div className="categoryNames">
             {['All', 'Sweet donuts', 'Savory donuts', 'Ice Cream']
-            .map(category => <Filter category={category}/>)}
+            .map(category => <Filter key={category}  category={category}/>)}
             </div>
         
         </section>

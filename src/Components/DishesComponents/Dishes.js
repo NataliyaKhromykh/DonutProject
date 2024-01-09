@@ -3,6 +3,7 @@ import dataDonuts from "../../data/dataDonuts";
 import { useSelector } from "react-redux";
 import { getSelectedCategory } from "../../redux/dishesSlice";
 
+
 function Dishes(){
     const selectedCategory = useSelector(getSelectedCategory);
     return (
@@ -13,7 +14,7 @@ function Dishes(){
                 return selectedCategory === dish.category;
             }
             )
-            .map(dish => <Dish dish={dish}/>)}
+            .map(dish => <Dish key={dish.id} dish={dish}/>)}
         </div>
     )
 }
