@@ -93,6 +93,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.5px);
 -webkit-backdrop-filter: blur(5.5px);
 border: 1px solid rgba(3, 119, 208, 0.07);
+cursor: pointer;
 }
 
 .cartNumber{
@@ -192,6 +193,10 @@ padding: 8px;
 margin-left: 30px;
 font-family: 'Varela Round', sans-serif;
 }
+.addToCartButton:hover{
+  cursor: pointer;
+  background-color: #0C134F;
+}
 .buttons{
 display: flex;
 }
@@ -206,6 +211,11 @@ display: flex;
   padding: 5px;
   display: flex;
   justify-content: center;
+}
+.minusplus:hover{
+  background-color: #94dffd;
+  border: 1px solid #0C134F;
+  cursor: pointer;
 }
 .deleteSpan{
   padding: 5px;
